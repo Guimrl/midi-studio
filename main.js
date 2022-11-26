@@ -1,6 +1,17 @@
-function playPom() {
-    document.querySelector('#som_tecla_pom').play();
+function tocar(idElementoAudio) {
+
+    document.querySelector(idElementoAudio).play();
 }
 
+const teclas = document.querySelectorAll('.tecla');
 
-document.querySelector('.tecla_pom');
+let i = 0;
+
+while(i < teclas.length) {
+
+    teclas[i].onclick = tocar;
+
+    i++;
+
+    console.log(i);
+}
