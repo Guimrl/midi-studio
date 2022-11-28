@@ -1,14 +1,10 @@
 function tocar(idElementoAudio) {
-
     document.querySelector(idElementoAudio).play();
 }
 
-//lista de teclas
 const teclas = document.querySelectorAll('.tecla');
 
-let i = 0;
-
-while(i < teclas.length) {
+for(let i = 0; i < teclas.length; i++) {
 
     const tecla = teclas[i];
     const instrumento = tecla.classList[1];
@@ -18,5 +14,4 @@ while(i < teclas.length) {
         tocar(idAudio);
     };
 
-    i++;
 }
