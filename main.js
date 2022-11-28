@@ -12,6 +12,16 @@ for(let i = 0; i < teclas.length; i++) {
 
     tecla.onclick = () => {
         tocar(idAudio);
-    };
+    }
+
+    tecla.onkeydown = (event) => {
+        if(event.code === 'Space' || event.code === 'Enter') {
+            tecla.classList.add('ativa');
+        }
+    }
+
+    tecla.onkeyup = () => {
+        tecla.classList.remove('ativa');
+    }
 
 }
