@@ -1,6 +1,5 @@
 :root {
   --cinza: #161a1d;
-  --vermelha: #a22c29;
   --vermelha-escura: #902923;
   --preto: #0b090a;
   --luz: #660708;
@@ -13,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   min-height: 100vh;
 }
 
@@ -36,8 +35,8 @@ h1 {
 .tecla {
   background-color: var(--preto);
   border-radius: 30px;
-  box-shadow: 3px 3px 0 var(--luz);
-  color: var(--vermelha);
+  border: 1px solid var(--luz);
+  color: var(--vermelha-escura);
   cursor: pointer;
   height: 120px;
   font-size: 1.75em;
@@ -49,8 +48,7 @@ h1 {
 
 .tecla.ativa,
 .tecla:active {
-  background-color: var(--vermelha);
-  border: 4px solid  var(--vermelha);
+  border: 4px solid var(--vermelha-escura);
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
   color: var(--preto);
   outline: none;
