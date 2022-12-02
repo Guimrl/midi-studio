@@ -3,6 +3,7 @@ function tocar(idElementoAudio) {
 
     if(elemento && elemento.localName === 'audio') {
         elemento.play();
+        elemento.currentTime = 0;
     } else {
         console.log('Elemento não encontrado ou seletor inválido');
         location.reload();
@@ -33,3 +34,4 @@ for(let i = 0; i < teclas.length; i++) {
     }
 
 }
+

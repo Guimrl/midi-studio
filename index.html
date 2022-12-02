@@ -14,34 +14,34 @@
     <link rel="icon" type="image/png" href="images/bateria.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="main.js" defer></script>
 
 </head>
 <body>
 
     <section class="teclado">
-        <button class="tecla tecla_pom"></button>
-        <button class="tecla tecla_clap"></button>
-        <button class="tecla tecla_tim"></button>
-
-        <button class="tecla tecla_puff"></button>
-        <button class="tecla tecla_splash"></button>
-        <button class="tecla tecla_toim"></button>
-
-        <button class="tecla tecla_psh"></button>
-        <button class="tecla tecla_tic"></button>
-        <button class="tecla tecla_tom"></button>
+        <button data-key="97" class="tecla tecla_pom"></button>
+        <button data-key="98" class="tecla tecla_clap"></button>
+        <button data-key="99" class="tecla tecla_tim"></button>
+        <!-- <div data-key="66" class="key kick"> -->
+        <button data-key="100" class="tecla tecla_puff"></button>
+        <button data-key="101" class="tecla tecla_splash"></button>
+        <button data-key="102" class="tecla tecla_toim"></button>
+        <button data-key="103" class="tecla tecla_psh"></button>
+        <button data-key="104" class="tecla tecla_tic"></button>
+        <button data-key="105" class="tecla tecla_tom"></button>
     </section>
 
-    <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
-    <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
-    <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
-    <audio src="sounds/keya.wav" id="som_tecla_puff"></audio>
-    <audio src="sounds/keys.wav" id="som_tecla_splash"></audio>
-    <audio src="sounds/keyd.wav" id="som_tecla_toim"></audio>
-    <audio src="sounds/keyz.wav" id="som_tecla_psh"></audio>
-    <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
-    <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
+    <audio data-key="97"  src="sounds/keyq.wav" id="som_tecla_pom"></audio>
+    <audio data-key="98"  src="sounds/keyw.wav" id="som_tecla_clap"></audio>
+    <audio data-key="99"  src="sounds/keye.wav" id="som_tecla_tim"></audio>
+    <audio data-key="100" src="sounds/keya.wav" id="som_tecla_puff"></audio>
+    <audio data-key="101" src="sounds/keys.wav" id="som_tecla_splash"></audio>
+    <audio data-key="102" src="sounds/keyd.wav" id="som_tecla_toim"></audio>
+    <audio data-key="103" src="sounds/keyz.wav" id="som_tecla_psh"></audio>
+    <audio data-key="104" src="sounds/keyx.wav" id="som_tecla_tic"></audio>
+    <audio data-key="105" src="sounds/keyc.wav" id="som_tecla_tom"></audio>
+
+    <script src="main.js"></script>
 
 </body>
 </html>
